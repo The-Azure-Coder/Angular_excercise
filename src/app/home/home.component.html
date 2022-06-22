@@ -1,0 +1,25 @@
+<div class="home-background">
+  <h1>Welcome to Amber Eats</h1>
+
+</div>
+<div style="padding: 13px;">
+  <mat-card-content>
+    <div class="flex-con" style="padding: 13px;">
+      <mat-spinner *ngIf="products.length === 0"></mat-spinner>
+      <mat-card *ngFor="let product of products" style="margin-top:12px;">
+        <mat-card-header>
+          <mat-card-title>{{product.name}}</mat-card-title>
+        </mat-card-header>
+        <mat-card-content>
+          <img style="height:100%; width: 100%;" src="{{ product.imageUrl }}" />
+          <div class="card_des">
+            <p class="pro_des">{{product.description.slice(0,100)}}</p>
+            <p>{{product.price | currency}}</p>
+            <p> {{product.quantity}}</p>
+          </div>
+        </mat-card-content>
+        <mat-card-actions>
+          <button [routerLink]="['/details', product.id]" mat-button> Buy Meal</button>
+        </mat-card-actions>
+      </mat-card>
+    </div>

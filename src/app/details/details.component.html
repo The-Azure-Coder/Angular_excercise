@@ -1,0 +1,13 @@
+<div *ngIf="product">
+  <mat-card class="product-detail" style="width: fit-content;">
+    <div class="card-img">
+      <img mat-card-xl-image src="{{ product.imageUrl }}">
+    </div>
+    <mat-card-content>
+      <h2>{{product.name}}</h2>
+      <p>{{product.description}}</p>
+      <p>{{product.price}}</p>
+      <button (click)="order()" mat-button>Order Now</button>
+    </mat-card-content>
+  </mat-card>
+</div>

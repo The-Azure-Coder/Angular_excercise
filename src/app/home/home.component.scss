@@ -1,0 +1,45 @@
+.flex-con{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+
+    .mat-card {
+        width: 18rem;
+         height: fit-content;
+      
+        margin-right: .6rem;
+        margin-bottom: 2rem;
+
+
+        .card_des{
+            overflow: hidden;
+            width: 80%;
+
+            .pro_des{
+               
+               
+            }
+
+        }
+        
+        
+    }
+}
+
+.home-background{
+    background-image: url('https://images.unsplash.com/photo-1625937286074-9ca519d5d9df?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8ZGlldGluZ3xlbnwwfHwwfHw%3D&w=1000&q=80');
+    height: 60%;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+
+
+    h1{
+        color: white;
+        font-size: 40px;
+        text-align: center;
+        padding-top: 10rem;
+    }
+
+}
+
