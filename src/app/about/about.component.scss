@@ -1,8 +1,8 @@
-.about-background{
-    background-image: url('https://www.taalrestaurant.co.uk/taal/wp-content/uploads/2019/04/taal_luxury_food900.jpg');
+.us-background{
+    background-image: url('https://www.gannett-cdn.com/-mm-/b2b05a4ab25f4fca0316459e1c7404c537a89702/c=0-0-1365-768/local/-/media/2018/08/20/USATODAY/usatsports/going-out-to-eat-restaurant-lunch-date.jpg');
     height: 40%;
     background-repeat: no-repeat;
-    background-position: bottom;
+    background-position: center;
     background-size: cover;
 
 
@@ -11,6 +11,37 @@
         font-size: 40px;
         text-align: center;
         padding-top: 8rem;
+    }
+
+}
+
+
+.founding {
+    display: flex;
+    padding: 40px;
+    background-color: #a6d6fd;
+
+    &-image {
+        margin-left: 5rem;
+
+        img {
+            width: 30rem;
+        }
+    }
+
+    &-content {
+        margin-left: 5rem;
+
+        h2 {
+            font-size: 30px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+
+        p {
+            line-height: 30px;
+            font-size: 14px;
+
+        }
     }
 
 }

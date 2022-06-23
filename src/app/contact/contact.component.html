@@ -1,23 +1,83 @@
-<div class="contact-background"></div>
-
-
-<div class="mapouter">
-  <div class="gmap_canvas"><iframe width="600" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=2880%20Broadway,%20New%20York&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://123movies-to.org">123 movies</a><br>
-    <style>
-      .mapouter {
-        position: relative;
-        text-align: right;
-        height: 500px;
-        width: 600px;
-      }
-    </style><a href="https://www.embedgooglemap.net"></a>
-    <style>
-      .gmap_canvas {
-        overflow: hidden;
-        background: none !important;
-        height: 500px;
-        width: 600px;
-      }
-    </style>
+<div class="contact">
+  <div class="contact-background" [style.background-image]="departBackground">
+    <div class="overlay"></div>
+    <div class="contact-head">
+      <div>
+        <h2>Stay in Touch</h2>
+      </div>
+    </div>
   </div>
+</div>
+
+
+<div class="message-card">
+  <div class="message-form">
+    <div class="detail">
+      <div class="content">
+        <h1>Amber Eats</h1>
+        <span>
+          <mat-icon>location_on</mat-icon>123 havendale cresent
+        </span>
+        <span>
+          <mat-icon>mail</mat-icon>Ambereattingsl@gmail.com
+        </span>
+        <span>
+          <mat-icon>phone</mat-icon>(876) 842-7815
+        </span>
+        <i class="fab fa-facebook"></i>
+        <i class="fab fa-twitter"></i>
+        <i class="fab fa-instagram"></i>
+        <i class="fas fa-envelope"></i>
+      </div>
+      <div class="message-image">
+        <img src="https://i.pinimg.com/originals/67/64/d7/6764d76eb5d1abc9c87110a5f847b63d.jpg" alt="">
+      </div>
+    </div>
+    <div class="contact-form">
+      <form action="">
+        <h2>Send us your feedback - We Value your opinion</h2>
+        <div>
+          <input type="text" placeholder="Firstname">
+          <input type="text" placeholder="Lastname">
+        </div>
+
+        <div>
+          <input type="text" placeholder="E-mail">
+          <input type="text" placeholder="Phone">
+        </div>
+
+        <div>
+          <input type="text" class="subject" placeholder="Subject">
+
+        </div>
+
+        <label for="">Message</label>
+        <textarea name="" id="" cols="73" rows="6"></textarea>
+
+
+        <button mat-button>
+          Send
+          <mat-icon>send</mat-icon>
+        </button>
+      </form>
+    </div>
+  </div>
+</div>
+
+
+<div class="newsletter">
+  <div class="content">
+    <div>
+      <h2>Stay in touch</h2>
+      <p>Subscribe to our newsletter and we'll keep you informed about new projects</p>
+      <input type="text" placeholder="Your email">
+    </div>
+
+  </div>
+
+  <div class="map">
+    <img src="../assets/images/map.png" alt="">
+  </div>
+
+
 </div>
